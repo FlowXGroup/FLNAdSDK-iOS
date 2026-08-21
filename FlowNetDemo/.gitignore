@@ -1,0 +1,6 @@
+.DS_Store
+*.zip
+xcuserdata/
+Pods/
+*.xcuserdata
+DerivedData/

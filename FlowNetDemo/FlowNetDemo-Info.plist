@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>openapp.jdmobile</string>
+		<string>openjd</string>
+		<string>jdmobile</string>
+		<string>vipshop</string>
+		<string>dianping</string>
+		<string>imeituan</string>
+		<string>taobao</string>
+		<string>tmall</string>
+		<string>wireless1688</string>
+		<string>tbopen</string>
+		<string>taobaolite</string>
+		<string>taobaoliveshare</string>
+		<string>alipays</string>
+		<string>pddopen</string>
+		<string>pinduoduo</string>
+		<string>weixin</string>
+		<string>weixinULAPI</string>
+		<string>weixinURLParamsAPI</string>
+	</array>
+</dict>
+</plist>

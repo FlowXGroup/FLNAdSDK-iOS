@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1474A99447B75E575A4C251A /* libPods-FlowNetDemo-FlowNetDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3300450067B43F5EEB6EC1CC /* libPods-FlowNetDemo-FlowNetDemoUITests.a */; };
+		460E71D8F73678A5F842D5E4 /* libPods-FlowNetDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C97EA0671100720BE53227 /* libPods-FlowNetDemo.a */; };
+		52F2BE2D5E3CF9565A0BBB04 /* libPods-FlowNetDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F45A4A1E4FA08FDF41BC56F7 /* libPods-FlowNetDemoTests.a */; };
+		9B4A0A582EF2ACA70023322D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A0A552EF2ACA70023322D /* SplashViewController.m */; };
+		9B4A0A5D2EF2ACBC0023322D /* NativeExpressAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A0A5A2EF2ACBC0023322D /* NativeExpressAdViewController.m */; };
+		9B7D23DA2EFE5BBF005B6D69 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7D23D92EFE5BBF005B6D69 /* AdSupport.framework */; };
+		9B7D23DC2EFE5BCB005B6D69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7D23DB2EFE5BCB005B6D69 /* AVFoundation.framework */; };
+		9B7D23DE2EFE5BDF005B6D69 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7D23DD2EFE5BDF005B6D69 /* CoreAudio.framework */; };
+		9B7D23E02EFE5C00005B6D69 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7D23DF2EFE5C00005B6D69 /* CoreServices.framework */; };
+		9BA31A662EF244EE0019DF29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA31A592EF244EE0019DF29 /* AppDelegate.m */; };
+		9BA31A672EF244EE0019DF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA31A5E2EF244EE0019DF29 /* main.m */; };
+		9BA31A682EF244EE0019DF29 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA31A622EF244EE0019DF29 /* SceneDelegate.m */; };
+		9BA31A692EF244EE0019DF29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA31A642EF244EE0019DF29 /* ViewController.m */; };
+		9BA31A6A2EF244EE0019DF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA31A5A2EF244EE0019DF29 /* Assets.xcassets */; };
+		9BA31A6C2EF244EE0019DF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA31A5D2EF244EE0019DF29 /* LaunchScreen.storyboard */; };
+		9BA31A6D2EF244EE0019DF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA31A602EF244EE0019DF29 /* Main.storyboard */; };
+		EB001012FAA200100990662 /* InterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010022FAA200200990662 /* InterstitialAdViewController.m */; };
+		EB001022FAA200200990662 /* RewardAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010042FAA200400990662 /* RewardAdViewController.m */; };
+		EB001032FAA200300990662 /* UnifiedNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010062FAA200600990662 /* UnifiedNativeAdViewController.m */; };
+		EB001042FAA200400990662 /* FlowNetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010072FAA200700990662 /* FlowNetDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BEA306B2EEBE5260074EBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BEA30472EEBE5250074EBEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BEA304E2EEBE5250074EBEA;
+			remoteInfo = FlowNet;
+		};
+		9BEA30752EEBE5260074EBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BEA30472EEBE5250074EBEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BEA304E2EEBE5250074EBEA;
+			remoteInfo = FlowNet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		196E611905102D6C8DB6A4DE /* Pods-FlowNetDemo-FlowNetDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetDemo-FlowNetDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlowNetDemo-FlowNetDemoUITests/Pods-FlowNetDemo-FlowNetDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DE3B5623D8E6AAC6C12F43F /* Pods-FlowNetDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-FlowNetDemoTests/Pods-FlowNetDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31D6B9F12F34AB220078E236 /* FlowNetDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FlowNetDemo-Info.plist"; sourceTree = "<group>"; };
+		3300450067B43F5EEB6EC1CC /* libPods-FlowNetDemo-FlowNetDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlowNetDemo-FlowNetDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		448C6AC7D1CA6498EDB95A4E /* Pods-FlowNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNet.release.xcconfig"; path = "Target Support Files/Pods-FlowNet/Pods-FlowNet.release.xcconfig"; sourceTree = "<group>"; };
+		46DE2E0BFF8253D3CF0C5CA4 /* Pods-FlowNetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetDemo.debug.xcconfig"; path = "Target Support Files/Pods-FlowNetDemo/Pods-FlowNetDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		481216C472DD6E593505D690 /* Pods-FlowNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetTests.release.xcconfig"; path = "Target Support Files/Pods-FlowNetTests/Pods-FlowNetTests.release.xcconfig"; sourceTree = "<group>"; };
+		4EB3849FE489315A7E846A73 /* Pods-FlowNetDemo-FlowNetDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetDemo-FlowNetDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-FlowNetDemo-FlowNetDemoUITests/Pods-FlowNetDemo-FlowNetDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64F32A81AC81235324AC0B91 /* Pods-FlowNetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetDemo.release.xcconfig"; path = "Target Support Files/Pods-FlowNetDemo/Pods-FlowNetDemo.release.xcconfig"; sourceTree = "<group>"; };
+		72010DD4DD6CC2CA29B96F38 /* Pods-FlowNetDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetDemoTests.release.xcconfig"; path = "Target Support Files/Pods-FlowNetDemoTests/Pods-FlowNetDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		85B2E751983FA76A7CEFE109 /* Pods-FlowNet-FlowNetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNet-FlowNetUITests.release.xcconfig"; path = "Target Support Files/Pods-FlowNet-FlowNetUITests/Pods-FlowNet-FlowNetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B4A0A542EF2ACA70023322D /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		9B4A0A552EF2ACA70023322D /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		9B4A0A592EF2ACBC0023322D /* NativeExpressAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeExpressAdViewController.h; sourceTree = "<group>"; };
+		9B4A0A5A2EF2ACBC0023322D /* NativeExpressAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeExpressAdViewController.m; sourceTree = "<group>"; };
+		9B7D23D92EFE5BBF005B6D69 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9B7D23DB2EFE5BCB005B6D69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B7D23DD2EFE5BDF005B6D69 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9B7D23DF2EFE5C00005B6D69 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		9BA31A582EF244EE0019DF29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BA31A592EF244EE0019DF29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BA31A5A2EF244EE0019DF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BA31A5B2EF244EE0019DF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA31A5C2EF244EE0019DF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BA31A5E2EF244EE0019DF29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BA31A5F2EF244EE0019DF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BA31A612EF244EE0019DF29 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9BA31A622EF244EE0019DF29 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9BA31A632EF244EE0019DF29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BA31A642EF244EE0019DF29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BEA304F2EEBE5250074EBEA /* FlowNetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowNetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEA306A2EEBE5260074EBEA /* FlowNetDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowNetDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEA30742EEBE5260074EBEA /* FlowNetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowNetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F9ADB917C9B6468CC19CFD /* Pods-FlowNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNetTests.debug.xcconfig"; path = "Target Support Files/Pods-FlowNetTests/Pods-FlowNetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E90B1E09D8FAD9D897876204 /* Pods-FlowNet-FlowNetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNet-FlowNetUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlowNet-FlowNetUITests/Pods-FlowNet-FlowNetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1B6910C3E44045BDA31A13C /* Pods-FlowNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowNet.debug.xcconfig"; path = "Target Support Files/Pods-FlowNet/Pods-FlowNet.debug.xcconfig"; sourceTree = "<group>"; };
+		F45A4A1E4FA08FDF41BC56F7 /* libPods-FlowNetDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlowNetDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C97EA0671100720BE53227 /* libPods-FlowNetDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlowNetDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0010012FAA200100990662 /* InterstitialAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialAdViewController.h; sourceTree = "<group>"; };
+		FB0010022FAA200200990662 /* InterstitialAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdViewController.m; sourceTree = "<group>"; };
+		FB0010032FAA200300990662 /* RewardAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardAdViewController.h; sourceTree = "<group>"; };
+		FB0010042FAA200400990662 /* RewardAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardAdViewController.m; sourceTree = "<group>"; };
+		FB0010052FAA200500990662 /* UnifiedNativeAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnifiedNativeAdViewController.h; sourceTree = "<group>"; };
+		FB0010062FAA200600990662 /* UnifiedNativeAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnifiedNativeAdViewController.m; sourceTree = "<group>"; };
+		FB0010072FAA200700990662 /* FlowNetDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowNetDemoTests.m; sourceTree = "<group>"; };
+		FB0020A12FBB300100990001 /* FLNDemoAdConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNDemoAdConfig.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BEA304C2EEBE5250074EBEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7D23DC2EFE5BCB005B6D69 /* AVFoundation.framework in Frameworks */,
+				9B7D23DA2EFE5BBF005B6D69 /* AdSupport.framework in Frameworks */,
+				9B7D23DE2EFE5BDF005B6D69 /* CoreAudio.framework in Frameworks */,
+				9B7D23E02EFE5C00005B6D69 /* CoreServices.framework in Frameworks */,
+				460E71D8F73678A5F842D5E4 /* libPods-FlowNetDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA30672EEBE5260074EBEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F2BE2D5E3CF9565A0BBB04 /* libPods-FlowNetDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA30712EEBE5260074EBEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1474A99447B75E575A4C251A /* libPods-FlowNetDemo-FlowNetDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BA31A542EF244EE0019DF29 /* NativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A0A592EF2ACBC0023322D /* NativeExpressAdViewController.h */,
+				9B4A0A5A2EF2ACBC0023322D /* NativeExpressAdViewController.m */,
+			);
+			path = NativeAd;
+			sourceTree = "<group>";
+		};
+		9BA31A562EF244EE0019DF29 /* SplashAd */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A0A542EF2ACA70023322D /* SplashViewController.h */,
+				9B4A0A552EF2ACA70023322D /* SplashViewController.m */,
+			);
+			path = SplashAd;
+			sourceTree = "<group>";
+		};
+		9BA31A572EF244EE0019DF29 /* AdTypes */ = {
+			isa = PBXGroup;
+			children = (
+				9BA31A542EF244EE0019DF29 /* NativeAd */,
+				9BA31A562EF244EE0019DF29 /* SplashAd */,
+				FB0010A02FAA20AA00990662 /* InterstitialAd */,
+				FB0010A12FAA20AA00990663 /* RewardAd */,
+				FB0010A22FAA20AA00990664 /* UnifiedNativeAd */,
+			);
+			path = AdTypes;
+			sourceTree = "<group>";
+		};
+		9BA31A652EF244EE0019DF29 /* FlowNet */ = {
+			isa = PBXGroup;
+			children = (
+				9BA31A572EF244EE0019DF29 /* AdTypes */,
+				FB0020A12FBB300100990001 /* FLNDemoAdConfig.h */,
+				9BA31A582EF244EE0019DF29 /* AppDelegate.h */,
+				9BA31A592EF244EE0019DF29 /* AppDelegate.m */,
+				9BA31A5A2EF244EE0019DF29 /* Assets.xcassets */,
+				9BA31A5B2EF244EE0019DF29 /* Info.plist */,
+				9BA31A5D2EF244EE0019DF29 /* LaunchScreen.storyboard */,
+				9BA31A5E2EF244EE0019DF29 /* main.m */,
+				9BA31A602EF244EE0019DF29 /* Main.storyboard */,
+				9BA31A612EF244EE0019DF29 /* SceneDelegate.h */,
+				9BA31A622EF244EE0019DF29 /* SceneDelegate.m */,
+				9BA31A632EF244EE0019DF29 /* ViewController.h */,
+				9BA31A642EF244EE0019DF29 /* ViewController.m */,
+			);
+			path = FlowNet;
+			sourceTree = "<group>";
+		};
+		9BCA986A2EEC11B200FBB750 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		9BEA30462EEBE5250074EBEA = {
+			isa = PBXGroup;
+			children = (
+				31D6B9F12F34AB220078E236 /* FlowNetDemo-Info.plist */,
+				9BA31A652EF244EE0019DF29 /* FlowNet */,
+				FB0010A32FAA20AA00990665 /* FlowNetDemoTests */,
+				9BEA30502EEBE5250074EBEA /* Products */,
+				ADD5D229A7838CCE4EA32A84 /* Pods */,
+				EC5F5FEE083EA1167EF751AE /* Frameworks */,
+				9BCA986A2EEC11B200FBB750 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		9BEA30502EEBE5250074EBEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA304F2EEBE5250074EBEA /* FlowNetDemo.app */,
+				9BEA306A2EEBE5260074EBEA /* FlowNetDemoTests.xctest */,
+				9BEA30742EEBE5260074EBEA /* FlowNetDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADD5D229A7838CCE4EA32A84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1B6910C3E44045BDA31A13C /* Pods-FlowNet.debug.xcconfig */,
+				448C6AC7D1CA6498EDB95A4E /* Pods-FlowNet.release.xcconfig */,
+				E90B1E09D8FAD9D897876204 /* Pods-FlowNet-FlowNetUITests.debug.xcconfig */,
+				85B2E751983FA76A7CEFE109 /* Pods-FlowNet-FlowNetUITests.release.xcconfig */,
+				A2F9ADB917C9B6468CC19CFD /* Pods-FlowNetTests.debug.xcconfig */,
+				481216C472DD6E593505D690 /* Pods-FlowNetTests.release.xcconfig */,
+				46DE2E0BFF8253D3CF0C5CA4 /* Pods-FlowNetDemo.debug.xcconfig */,
+				64F32A81AC81235324AC0B91 /* Pods-FlowNetDemo.release.xcconfig */,
+				196E611905102D6C8DB6A4DE /* Pods-FlowNetDemo-FlowNetDemoUITests.debug.xcconfig */,
+				4EB3849FE489315A7E846A73 /* Pods-FlowNetDemo-FlowNetDemoUITests.release.xcconfig */,
+				1DE3B5623D8E6AAC6C12F43F /* Pods-FlowNetDemoTests.debug.xcconfig */,
+				72010DD4DD6CC2CA29B96F38 /* Pods-FlowNetDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC5F5FEE083EA1167EF751AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D23DF2EFE5C00005B6D69 /* CoreServices.framework */,
+				9B7D23DD2EFE5BDF005B6D69 /* CoreAudio.framework */,
+				9B7D23DB2EFE5BCB005B6D69 /* AVFoundation.framework */,
+				9B7D23D92EFE5BBF005B6D69 /* AdSupport.framework */,
+				F4C97EA0671100720BE53227 /* libPods-FlowNetDemo.a */,
+				3300450067B43F5EEB6EC1CC /* libPods-FlowNetDemo-FlowNetDemoUITests.a */,
+				F45A4A1E4FA08FDF41BC56F7 /* libPods-FlowNetDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB0010A02FAA20AA00990662 /* InterstitialAd */ = {
+			isa = PBXGroup;
+			children = (
+				FB0010012FAA200100990662 /* InterstitialAdViewController.h */,
+				FB0010022FAA200200990662 /* InterstitialAdViewController.m */,
+			);
+			path = InterstitialAd;
+			sourceTree = "<group>";
+		};
+		FB0010A12FAA20AA00990663 /* RewardAd */ = {
+			isa = PBXGroup;
+			children = (
+				FB0010032FAA200300990662 /* RewardAdViewController.h */,
+				FB0010042FAA200400990662 /* RewardAdViewController.m */,
+			);
+			path = RewardAd;
+			sourceTree = "<group>";
+		};
+		FB0010A22FAA20AA00990664 /* UnifiedNativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				FB0010052FAA200500990662 /* UnifiedNativeAdViewController.h */,
+				FB0010062FAA200600990662 /* UnifiedNativeAdViewController.m */,
+			);
+			path = UnifiedNativeAd;
+			sourceTree = "<group>";
+		};
+		FB0010A32FAA20AA00990665 /* FlowNetDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0010072FAA200700990662 /* FlowNetDemoTests.m */,
+			);
+			path = FlowNetDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BEA304E2EEBE5250074EBEA /* FlowNetDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BEA307D2EEBE5260074EBEA /* Build configuration list for PBXNativeTarget "FlowNetDemo" */;
+			buildPhases = (
+				FDA5807BBCB8025C9F2A379D /* [CP] Check Pods Manifest.lock */,
+				9BEA304B2EEBE5250074EBEA /* Sources */,
+				9BEA304C2EEBE5250074EBEA /* Frameworks */,
+				9BEA304D2EEBE5250074EBEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowNetDemo;
+			productName = FlowNet;
+			productReference = 9BEA304F2EEBE5250074EBEA /* FlowNetDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BEA30692EEBE5260074EBEA /* FlowNetDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BEA30822EEBE5260074EBEA /* Build configuration list for PBXNativeTarget "FlowNetDemoTests" */;
+			buildPhases = (
+				38C67DD933746C5BE7EDAB5C /* [CP] Check Pods Manifest.lock */,
+				9BEA30662EEBE5260074EBEA /* Sources */,
+				9BEA30672EEBE5260074EBEA /* Frameworks */,
+				9BEA30682EEBE5260074EBEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BEA306C2EEBE5260074EBEA /* PBXTargetDependency */,
+			);
+			name = FlowNetDemoTests;
+			productName = FlowNetTests;
+			productReference = 9BEA306A2EEBE5260074EBEA /* FlowNetDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BEA30732EEBE5260074EBEA /* FlowNetDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BEA30852EEBE5260074EBEA /* Build configuration list for PBXNativeTarget "FlowNetDemoUITests" */;
+			buildPhases = (
+				34B5DCD28C2BB44F669A77E9 /* [CP] Check Pods Manifest.lock */,
+				9BEA30702EEBE5260074EBEA /* Sources */,
+				9BEA30712EEBE5260074EBEA /* Frameworks */,
+				9BEA30722EEBE5260074EBEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BEA30762EEBE5260074EBEA /* PBXTargetDependency */,
+			);
+			name = FlowNetDemoUITests;
+			productName = FlowNetUITests;
+			productReference = 9BEA30742EEBE5260074EBEA /* FlowNetDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BEA30472EEBE5250074EBEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					9BEA304E2EEBE5250074EBEA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					9BEA30692EEBE5260074EBEA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9BEA304E2EEBE5250074EBEA;
+					};
+					9BEA30732EEBE5260074EBEA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9BEA304E2EEBE5250074EBEA;
+					};
+				};
+			};
+			buildConfigurationList = 9BEA304A2EEBE5250074EBEA /* Build configuration list for PBXProject "FlowNetDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BEA30462EEBE5250074EBEA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9BEA30502EEBE5250074EBEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BEA304E2EEBE5250074EBEA /* FlowNetDemo */,
+				9BEA30692EEBE5260074EBEA /* FlowNetDemoTests */,
+				9BEA30732EEBE5260074EBEA /* FlowNetDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BEA304D2EEBE5250074EBEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA31A6A2EF244EE0019DF29 /* Assets.xcassets in Resources */,
+				9BA31A6C2EF244EE0019DF29 /* LaunchScreen.storyboard in Resources */,
+				9BA31A6D2EF244EE0019DF29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA30682EEBE5260074EBEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA30722EEBE5260074EBEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B5DCD28C2BB44F669A77E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowNetDemo-FlowNetDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38C67DD933746C5BE7EDAB5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowNetDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDA5807BBCB8025C9F2A379D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowNetDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BEA304B2EEBE5250074EBEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA31A662EF244EE0019DF29 /* AppDelegate.m in Sources */,
+				9B4A0A582EF2ACA70023322D /* SplashViewController.m in Sources */,
+				9BA31A672EF244EE0019DF29 /* main.m in Sources */,
+				9B4A0A5D2EF2ACBC0023322D /* NativeExpressAdViewController.m in Sources */,
+				EB001012FAA200100990662 /* InterstitialAdViewController.m in Sources */,
+				EB001022FAA200200990662 /* RewardAdViewController.m in Sources */,
+				EB001032FAA200300990662 /* UnifiedNativeAdViewController.m in Sources */,
+				9BA31A682EF244EE0019DF29 /* SceneDelegate.m in Sources */,
+				9BA31A692EF244EE0019DF29 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA30662EEBE5260074EBEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB001042FAA200400990662 /* FlowNetDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA30702EEBE5260074EBEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BEA306C2EEBE5260074EBEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BEA304E2EEBE5250074EBEA /* FlowNetDemo */;
+			targetProxy = 9BEA306B2EEBE5260074EBEA /* PBXContainerItemProxy */;
+		};
+		9BEA30762EEBE5260074EBEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BEA304E2EEBE5250074EBEA /* FlowNetDemo */;
+			targetProxy = 9BEA30752EEBE5260074EBEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BA31A5D2EF244EE0019DF29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA31A5C2EF244EE0019DF29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9BA31A602EF244EE0019DF29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA31A5F2EF244EE0019DF29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BEA307E2EEBE5260074EBEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DE2E0BFF8253D3CF0C5CA4 /* Pods-FlowNetDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BR636RB6SZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlowNetDemo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FlowNetDemo;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "广告用于获取定位信息";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "我们需要您的授权来跟踪您的活动，以便为您提供更个性化的广告内容。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"ImageIO\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flownet.innoads;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BEA307F2EEBE5260074EBEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F32A81AC81235324AC0B91 /* Pods-FlowNetDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BR636RB6SZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FlowNetDemo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FlowNetDemo;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "广告用于获取定位信息";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "我们需要您的授权来跟踪您的活动，以便为您提供更个性化的广告内容。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"ImageIO\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flownet.innoads;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BEA30802EEBE5260074EBEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BEA30812EEBE5260074EBEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BEA30832EEBE5260074EBEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE3B5623D8E6AAC6C12F43F /* Pods-FlowNetDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydtest.www.FlowNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowNetDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlowNetDemo";
+			};
+			name = Debug;
+		};
+		9BEA30842EEBE5260074EBEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72010DD4DD6CC2CA29B96F38 /* Pods-FlowNetDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydtest.www.FlowNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowNetDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlowNetDemo";
+			};
+			name = Release;
+		};
+		9BEA30862EEBE5260074EBEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196E611905102D6C8DB6A4DE /* Pods-FlowNetDemo-FlowNetDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydtest.www.FlowNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlowNet;
+			};
+			name = Debug;
+		};
+		9BEA30872EEBE5260074EBEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB3849FE489315A7E846A73 /* Pods-FlowNetDemo-FlowNetDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ydtest.www.FlowNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlowNet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BEA304A2EEBE5250074EBEA /* Build configuration list for PBXProject "FlowNetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEA30802EEBE5260074EBEA /* Debug */,
+				9BEA30812EEBE5260074EBEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BEA307D2EEBE5260074EBEA /* Build configuration list for PBXNativeTarget "FlowNetDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEA307E2EEBE5260074EBEA /* Debug */,
+				9BEA307F2EEBE5260074EBEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BEA30822EEBE5260074EBEA /* Build configuration list for PBXNativeTarget "FlowNetDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEA30832EEBE5260074EBEA /* Debug */,
+				9BEA30842EEBE5260074EBEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BEA30852EEBE5260074EBEA /* Build configuration list for PBXNativeTarget "FlowNetDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEA30862EEBE5260074EBEA /* Debug */,
+				9BEA30872EEBE5260074EBEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BEA30472EEBE5250074EBEA /* Project object */;
+}
