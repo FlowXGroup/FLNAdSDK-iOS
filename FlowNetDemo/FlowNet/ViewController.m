@@ -9,12 +9,16 @@
 #import "InterstitialAdViewController.h"
 #import "RewardAdViewController.h"
 #import "UnifiedNativeAdViewController.h"
+#import <FLNAdSDK/FLNAdSDKManager.h>
+#import <Masonry/Masonry.h>
 
 static NSString * const kMenuCellId = @"menu";
+static const CGFloat kMenuRowHeight = 80.0;
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UILabel *sdkVersionLabel;
 @property (nonatomic, copy) NSArray<NSString *> *menuTitles;
 
 @end
@@ -23,6 +27,8 @@ static NSString * const kMenuCellId = @"menu";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"FlowNet Demo";
+    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
     self.view.backgroundColor = [UIColor systemGroupedBackgroundColor];
     self.menuTitles = @[@"开屏广告",@"信息流 模版渲染",@"信息流 自渲染",@"插屏广告",@"激励视频"];
 
@@ -30,83 +36,60 @@ static NSString * const kMenuCellId = @"menu";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
-    if (@available(iOS 15.0, *)) {
-        self.tableView.sectionHeaderTopPadding = 8;
-    }
+    self.tableView.scrollEnabled = NO;
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 16, 0, 0);
+    self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    self.tableView.contentInset = UIEdgeInsetsZero;
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
+    if (@available(iOS 15.0, *)) {
+        self.tableView.sectionHeaderTopPadding = 0;
+    }
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kMenuCellId];
     [self.view addSubview:self.tableView];
 
-    CGFloat initialW = CGRectGetWidth(self.view.bounds);
-    if (initialW < 1) {
-        initialW = CGRectGetWidth(UIScreen.mainScreen.bounds);
-    }
-    self.tableView.tableHeaderView = [self buildTableHeaderSizedForWidth:initialW];
-}
+    self.sdkVersionLabel = [[UILabel alloc] init];
+    self.sdkVersionLabel.textAlignment = NSTextAlignmentCenter;
+    self.sdkVersionLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    self.sdkVersionLabel.textColor = [UIColor secondaryLabelColor];
+    self.sdkVersionLabel.numberOfLines = 1;
+    NSString *sdkVersion = [FLNAdSDKManager sdkVersion];
+    self.sdkVersionLabel.text = sdkVersion.length > 0 ? sdkVersion : @"";
+    [self.view addSubview:self.sdkVersionLabel];
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    UIEdgeInsets safe = self.view.safeAreaInsets;
-    CGRect b = self.view.bounds;
-    self.tableView.frame = CGRectMake(CGRectGetMinX(b) + safe.left,
-                                      CGRectGetMinY(b) + safe.top,
-                                      CGRectGetWidth(b) - safe.left - safe.right,
-                                      CGRectGetHeight(b) - safe.top - safe.bottom);
-    [self relayoutTableHeaderIfNeeded];
-}
-
-- (void)relayoutTableHeaderIfNeeded {
-    UIView *header = self.tableView.tableHeaderView;
-    if (!header) {
-        return;
-    }
-    CGFloat w = CGRectGetWidth(self.tableView.bounds);
-    if (w < 1) {
-        return;
-    }
-    UIView *newHeader = [self buildTableHeaderSizedForWidth:w];
-    if (fabs(header.bounds.size.height - newHeader.bounds.size.height) > 0.5 || fabs(header.bounds.size.width - w) > 0.5) {
-        self.tableView.tableHeaderView = newHeader;
-    }
-}
-
-- (UIView *)buildTableHeaderSizedForWidth:(CGFloat)width {
-    CGFloat layoutW = width >= 1.0 ? width : CGRectGetWidth(UIScreen.mainScreen.bounds);
-    CGFloat side = 20.0;
-    CGFloat top = 20.0;
-    CGFloat gap = 6.0;
-    CGFloat bottom = 16.0;
-    CGFloat textW = MAX(layoutW - 2.0 * side, 0.0);
-
-    UILabel *title = [[UILabel alloc] init];
-    title.text = @"FlowNet Demo";
-    title.font = [UIFont systemFontOfSize:28 weight:UIFontWeightBold];
-    title.textColor = [UIColor labelColor];
-    title.numberOfLines = 1;
-    CGSize titleFit = [title sizeThatFits:CGSizeMake(textW, CGFLOAT_MAX)];
-    title.frame = CGRectMake(side, top, textW, titleFit.height);
-
-    UILabel *sub = [[UILabel alloc] init];
-    sub.text = @"选择广告类型进行联调";
-    sub.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    sub.textColor = [UIColor secondaryLabelColor];
-    sub.numberOfLines = 2;
-    CGFloat subY = CGRectGetMaxY(title.frame) + gap;
-    CGSize subFit = [sub sizeThatFits:CGSizeMake(textW, CGFLOAT_MAX)];
-    sub.frame = CGRectMake(side, subY, textW, subFit.height);
-
-    CGFloat totalH = CGRectGetMaxY(sub.frame) + bottom;
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, 0, layoutW, totalH)];
-    container.backgroundColor = [UIColor clearColor];
-    [container addSubview:title];
-    [container addSubview:sub];
-    return container;
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        make.left.right.equalTo(self.view);
+        make.height.mas_equalTo(self.menuTitles.count * kMenuRowHeight);
+    }];
+    [self.sdkVersionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.tableView.mas_bottom).offset(8);
+        make.left.equalTo(self.view).offset(20);
+        make.right.equalTo(self.view).offset(-20);
+        make.height.mas_equalTo(22);
+        make.bottom.lessThanOrEqualTo(self.view.mas_safeAreaLayoutGuideBottom).offset(-8);
+    }];
 }
 
 #pragma mark - UITableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return [[UIView alloc] initWithFrame:CGRectZero];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -126,10 +109,8 @@ static NSString * const kMenuCellId = @"menu";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return kMenuRowHeight;
 }
-
- 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

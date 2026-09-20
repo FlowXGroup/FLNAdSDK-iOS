@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"开屏广告";
  
     self.view.backgroundColor = UIColor.whiteColor;
     // Buttons

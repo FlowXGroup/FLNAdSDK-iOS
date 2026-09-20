@@ -26,6 +26,7 @@
 		EB001012FAA200100990662 /* InterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010022FAA200200990662 /* InterstitialAdViewController.m */; };
 		EB001022FAA200200990662 /* RewardAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010042FAA200400990662 /* RewardAdViewController.m */; };
 		EB001032FAA200300990662 /* UnifiedNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010062FAA200600990662 /* UnifiedNativeAdViewController.m */; };
+		A10010032FAA201300990662 /* FLNDemoNativeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A10010022FAA201200990662 /* FLNDemoNativeVideoView.m */; };
 		EB001042FAA200400990662 /* FlowNetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0010072FAA200700990662 /* FlowNetDemoTests.m */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,8 @@
 		FB0010042FAA200400990662 /* RewardAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardAdViewController.m; sourceTree = "<group>"; };
 		FB0010052FAA200500990662 /* UnifiedNativeAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnifiedNativeAdViewController.h; sourceTree = "<group>"; };
 		FB0010062FAA200600990662 /* UnifiedNativeAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnifiedNativeAdViewController.m; sourceTree = "<group>"; };
+		A10010012FAA201100990662 /* FLNDemoNativeVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNDemoNativeVideoView.h; sourceTree = "<group>"; };
+		A10010022FAA201200990662 /* FLNDemoNativeVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLNDemoNativeVideoView.m; sourceTree = "<group>"; };
 		FB0010072FAA200700990662 /* FlowNetDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowNetDemoTests.m; sourceTree = "<group>"; };
 		FB0020A12FBB300100990001 /* FLNDemoAdConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNDemoAdConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,6 +266,8 @@
 			children = (
 				FB0010052FAA200500990662 /* UnifiedNativeAdViewController.h */,
 				FB0010062FAA200600990662 /* UnifiedNativeAdViewController.m */,
+				A10010012FAA201100990662 /* FLNDemoNativeVideoView.h */,
+				A10010022FAA201200990662 /* FLNDemoNativeVideoView.m */,
 			);
 			path = UnifiedNativeAd;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 				EB001012FAA200100990662 /* InterstitialAdViewController.m in Sources */,
 				EB001022FAA200200990662 /* RewardAdViewController.m in Sources */,
 				EB001032FAA200300990662 /* UnifiedNativeAdViewController.m in Sources */,
+				A10010032FAA201300990662 /* FLNDemoNativeVideoView.m in Sources */,
 				9BA31A682EF244EE0019DF29 /* SceneDelegate.m in Sources */,
 				9BA31A692EF244EE0019DF29 /* ViewController.m in Sources */,
 			);

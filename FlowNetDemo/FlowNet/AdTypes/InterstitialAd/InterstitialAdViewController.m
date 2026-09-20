@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"插屏广告";
     self.view.backgroundColor = UIColor.whiteColor;
 
     self.loadButton = [UIButton buttonWithType:UIButtonTypeSystem];

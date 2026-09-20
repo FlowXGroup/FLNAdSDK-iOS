@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"激励视频";
     self.view.backgroundColor = UIColor.whiteColor;
 
     self.loadButton = [UIButton buttonWithType:UIButtonTypeSystem];

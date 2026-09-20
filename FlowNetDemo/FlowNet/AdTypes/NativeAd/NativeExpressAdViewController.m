@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"信息流模版";
     
     self.data = [NSMutableArray array];
     for (int i = 0; i < 50; i++) {
