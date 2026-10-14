@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FLNAdSDK'
-  s.version          = '6.2.0.19'
+  s.version          = '6.2.1.1'
   s.summary          = 'FLNAdSDK iOS advertising SDK'
   s.description      = 'FLNAdSDK iOS advertising SDK, distributed as a binary XCFramework.'
   s.homepage         = 'https://github.com/FlowXGroup/FLNAdSDK-iOS'
