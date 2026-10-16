@@ -2,13 +2,13 @@
 
 iOS 广告 SDK（XCFramework 二进制分发）。
 
-**版本：** 6.2.1.1  
+**版本：** 6.2.1.11  
 **最低系统：** iOS 13.0
 
 ## 安装（CocoaPods）
 
 ```ruby
-pod 'FLNAdSDK', :git => 'https://github.com/FlowXGroup/FLNAdSDK-iOS.git', :tag => '6.2.1.1'
+pod 'FLNAdSDK', :git => 'https://github.com/FlowXGroup/FLNAdSDK-iOS.git', :tag => '6.2.1.11'
 ```
 
 ```bash
@@ -35,7 +35,7 @@ Demo 通过 CocoaPods 拉取 `FLNAdSDK`（与上方相同的 git + tag），不�
 
 ## 接入说明
 
-详见同目录《ADN-SDK 6.2.1.1 集成说明（iOS）.pdf》。
+详见同目录《ADN-SDK 6.2.1.11 集成说明（iOS）.pdf》。
 
 ## 合规与隐私
 
